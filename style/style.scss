@@ -12,7 +12,6 @@ $logoPurple : #93267D;
     <div class="sectionTitle">
         <h2>About Us</h2>
     </div>
-    
 */
 /* common classes*/
 .sectionTitle {
@@ -54,4 +53,12 @@ $logoPurple : #93267D;
     box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
     -webkit-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
     -moz-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+}
+/*NavBar*/
+.navCustom {
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: white;
 }

@@ -8,7 +8,6 @@
     <div class="sectionTitle">
         <h2>About Us</h2>
     </div>
-    
 */
 /* common classes*/
 .sectionTitle {
@@ -42,5 +41,12 @@
       left: calc(50% - 20px); }
 
 /*box shadoow */
+/*NavBar*/
+.navCustom {
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
