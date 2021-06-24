@@ -54,6 +54,9 @@ $logoPurple : #93267D;
     -webkit-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
     -moz-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
 }
+body {
+    background-color: #ddd;
+}
 /*NavBar*/
 .navCustom {
     background-color: white;
@@ -61,4 +64,36 @@ $logoPurple : #93267D;
     font-size: 1.3rem;
     letter-spacing: 2px;
     color: white;
+}
+/*About*/
+.about {
+    background-color: #fff;
+    border-radius: 10px;
+    img:hover {
+        filter: drop-shadow(4px 4px 6px $logoPurple);
+        transition: all 1s ease-in-out;
+    }
+    p , ul {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        color: $logoPurple;
+        font-weight: bold;
+    }
+    ul {
+        li {
+            color: $logoGreen;
+            span {
+                color: $logoYellow;
+            }
+        }
+    }
+}
+/* custom about at meduim screen*/
+@media (min-width:762px) and (max-width:991px) {
+    .about {
+        p , ul {
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    }
 }

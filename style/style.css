@@ -41,6 +41,9 @@
       left: calc(50% - 20px); }
 
 /*box shadoow */
+body {
+  background-color: #ddd; }
+
 /*NavBar*/
 .navCustom {
   background-color: white;
@@ -48,5 +51,28 @@
   font-size: 1.3rem;
   letter-spacing: 2px;
   color: white; }
+
+/*About*/
+.about {
+  background-color: #fff;
+  border-radius: 10px; }
+  .about img:hover {
+    filter: drop-shadow(4px 4px 6px #93267D);
+    transition: all 1s ease-in-out; }
+  .about p, .about ul {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #93267D;
+    font-weight: bold; }
+  .about ul li {
+    color: #669B41; }
+    .about ul li span {
+      color: #F9B72D; }
+
+/* custom about at meduim screen*/
+@media (min-width: 762px) and (max-width: 991px) {
+  .about p, .about ul {
+    font-size: 0.8rem;
+    font-weight: bold; } }
 
 /*# sourceMappingURL=style.css.map */
