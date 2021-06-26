@@ -41,6 +41,59 @@
       left: calc(50% - 20px); }
 
 /*box shadoow */
+/*Custom Butoon*/
+.draw-border {
+  box-shadow: inset 0 0 0 4px #669B41;
+  color: #669B41;
+  transition: color 0.25s 0.0833333333s;
+  position: relative; }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0; }
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px; }
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px; }
+  .draw-border:hover {
+    color: #93267D;
+    background-color: #fff; }
+    .draw-border:hover::before, .draw-border:hover::after {
+      border-color: #93267D;
+      transition: border-color 0s, width 0.25s, height 0.25s;
+      width: 100%;
+      height: 100%; }
+    .draw-border:hover::before {
+      transition-delay: 0s, 0s, 0.25s; }
+    .draw-border:hover::after {
+      transition-delay: 0s, 0.25s, 0s; }
+
+.btnCustoum {
+  background: #669B41;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1em 2em;
+  color: #fff;
+  letter-spacing: 2px; }
+  .btnCustoum:focus {
+    outline: 2px dotted #669B41; }
+
+/*Custom Button at meduim screen*/
+@media (min-width: 762px) and (max-width: 991px) {
+  .btnCustoum {
+    font-size: 0.8rem; } }
+/*Start Styling*/
 body {
   background-color: #ddd; }
 
@@ -57,7 +110,7 @@ body {
   background-color: #fff;
   border-radius: 10px; }
   .about img:hover {
-    filter: drop-shadow(4px 4px 6px #93267D);
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
     transition: all 1s ease-in-out; }
   .about p, .about ul {
     font-size: 1.1rem;
@@ -65,7 +118,7 @@ body {
     color: #93267D;
     font-weight: bold; }
   .about ul li {
-    color: #669B41; }
+    color: #93267D; }
     .about ul li span {
       color: #F9B72D; }
 
@@ -74,5 +127,92 @@ body {
   .about p, .about ul {
     font-size: 0.8rem;
     font-weight: bold; } }
+/*Service*/
+.service .card {
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.5); }
+  .service .card i {
+    color: #F9B72D; }
+  .service .card .card-title {
+    color: #669B41;
+    letter-spacing: 2px;
+    font-weight: bold; }
+  .service .card .card-text {
+    color: #93267D;
+    font-weight: 400; }
+
+.CallToAction {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/fixed img-2.jpg") fixed center center;
+  background-size: cover; }
+  .CallToAction p, .CallToAction h3 {
+    font-weight: 400;
+    color: #F9B72D;
+    font-size: 1.8rem;
+    letter-spacing: 2px; }
+  .CallToAction h3 {
+    color: #fff;
+    font-size: 2.5rem; }
+
+/*Portfolio*/
+.portfolio {
+  background-color: #fff;
+  border-radius: 10px; }
+  .portfolio p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #669B41;
+    letter-spacing: 1px; }
+  .portfolio .portofolioBtnActive {
+    width: 50px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    transition: all 0.3s;
+    padding: 8px 5px;
+    border-radius: 50px;
+    background: #93267D; }
+  .portfolio .portofolioBtn {
+    width: 50px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    color: #444444;
+    transition: all 0.3s;
+    padding: 8px 5px;
+    border-radius: 50px; }
+    .portfolio .portofolioBtn:hover {
+      background: #93267D;
+      color: #fff; }
+  .portfolio img:hover {
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+    transition: all 1s ease-in-out; }
+
+/*Team*/
+.team .card-body .card-title {
+  color: #93267D;
+  font-weight: bold;
+  letter-spacing: 2px; }
+.team .card-body .card-text:last-of-type {
+  color: #669B41;
+  font-weight: 400; }
+
+/*Contact*/
+.contact {
+  background-color: #fff;
+  border-radius: 10px; }
+  .contact .card .card-title {
+    color: #93267D;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 10px; }
 
 /*# sourceMappingURL=style.css.map */
