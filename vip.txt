@@ -1,9 +1,0 @@
-https://compressimage.toolur.com/
-https://animate.style/#utilities
-https://www.sliderrevolution.com/resources/css-button-hover-effects/
-
--------
-background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../../img/cta-bg.jpg") fixed center center;
-    background-size: cover;
-    padding: 120px 0;
-    color: white;
